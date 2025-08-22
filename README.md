@@ -2,7 +2,7 @@
 
 Welcome to **Our Digital Garden** - a living, breathing repository of web development knowledge that grows with every contribution. This is more than just documentation; it's a collaborative learning space where concepts bloom, ideas cross-pollinate, and knowledge flourishes.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/ourdigitalgarden/deploys)
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/ourdigitalgarden/deploys) -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🌟 What is This?
