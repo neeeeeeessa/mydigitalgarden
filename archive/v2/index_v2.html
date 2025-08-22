@@ -1,0 +1,107 @@
+<!--index_v2.html-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles_v2.css" />
+        <title>👩‍💻 My Coding Journey</title>
+    </head>
+    <body>
+        <h1>Hi! I'm V and this is: 👩‍💻 My Coding Journey |  <a href="https://x.com/enchantedcode?t=Cp0MStUanBraESI98aKt2w&s=08" target="_blank">Twitter</a></h1>
+        <h2>This website was built to structure my notes in while I'm learning to code.</h2>
+        <h3>See my journey here: <a href="index_v1.html">v1</a> | <a href="index.html">v2</a>.</h3>
+        <p>
+            <ul>
+                <h3><dt>HTML (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank">documentation</a>)</dt></h3>
+                <h4>Doctype</h4>
+                <li>Use &lt;!DOCTYPE html&gt; at the top of the page to indicate to the browser that this is HTML5. If not used, will most likely not change anything, but might cause issues sometimes.</li>
+                <ul>
+                    <h4>HTML</h4>
+                    <li>Use &lt;html&gt; & &lt;/html&gt; to indicate the following code is HTML.</li>
+                    <ul>
+                        <h4>Head</h4>
+                        <li>Use &lt;head&gt; & &lt;/head&gt; to include: 
+                        <ul>
+                            <li>&lt;title&gt; Title placeholder &lt;/title&gt; to add page name on the tab.</li>
+                            <li>&lt;link rel="stylesheet" href="styles.css"/&gt; & &lt;link href="https://fonts.googleapis.com/..." rel="stylesheet"&gt; to add css links.</li>
+                            <li>&lt;script src="index.js"&gt; & &lt;/script&gt; to add js links.</li>
+                            <li>[tbd] Metadata for sharing in other websites (e.g. Twitter).</li>
+                        </ul>
+                        <h4>Body</h4>
+                        <li>Use < body > & < /body > to include page elements:</li>
+                        <ul>
+                            <dt><h4>Text elements (Core HTML tags)</h4></dt>
+                            <li>< h1 > & < /h1 > add title type 1.</li>
+                            <li>< h2 > & < /h2 > add title type 2.</li>
+                            <li>< h3 > & < /h3 > add title type 3.</li>
+                            <li>< p > & < /p > add paragraph.</li>
+
+                            <dt><h4>Anchor Tags</h4></dt>
+                            <li>< a href="file.html" > Visible Text < /a > add a link to another html file.</li>
+                            <li>< a href="website.com" target="_blank" > Visible Text < /a > add a link for an external website to open on a new tab.</li>
+
+                            <dt><h4>Interactive elements & Buttons</h4></dt>
+                            <li>< img src="" > include image. The image must be placed in the same folder as the coding file. Add width="100%" inside <> to resize image according to page size.</li>
+                            <li>< button > & < /button > add pre-formated buttons.</li>
+                            <li>< input type="text" > add input box. Add placeholder="" inside <> to include placeholder text.</li>
+                            <li>< input type="password" > add input password box.</li>
+                            <li>< input type="checkbox" > add input checkbox.</li>
+                            <li>< label for="name" >Title outside of button: < /label > <br>
+                                < input placeholder="placeholder inside of button" id="name" > add labels. Labels ensure that screenreaders can convey the purpose of the input field for accessibility and allows users to click on the label to focus or activate the associated input. Use for and id where the value is the same for both.</li>
+                            <li>< time datetime="2025-05-13" >May 13, 2025< /time > add time. It includes a datetime attribute for machine readable format, allowing for better search engine results.</li>
+                            <li>< address > & < /address > add address.</li>
+                            <li>< audio controls > < source src="file.wav" type="audio/mpeg"> < /audio > add audio.</li>
+
+                            <dt><h4>Section elements</h4></dt>
+                            <li>< div > & < /div > add section.</li>
+                            <li>< br > & < /br > add break.</li>
+
+                            <dt><h4>List elements</h4></dt>
+                            <li>Use < ol > & < /ol > and < ul > & < /ul > to start ordered and unordered lists.</li>
+                            <ul>
+                                <li>< dl > & < /dl > add description list.</li>
+                                <ul>
+                                    <li>< dt > & < /dt > add description title.</li>
+                                    <li>< dd > & < /dd > add description detail.</li>
+                                    <li>< li > & < /li > add list item.</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+                <h3><dt>CSS</dt></h3>
+                <h4>CSS Syntax</h4>
+                <p>CSS selects certain HTML elements and style them (e.g.body). Then, {} are added and within them a property, :, a value, and ; are placed.
+                <br>body {
+                    <br>color: red;
+                <br>}</p>
+                <li>"background: red (or #8B4513);" adds background colour.</li>
+                <li>"color: white (or #8B4513);" adds letter colour.</li>
+                <li>"font-size: 25px;" adds font size.</li>
+                <li>"font-weight: bold;" adds font formatting.</li>
+                <li>"text-align: center;" adds text alignment.</li>
+                <li>"margin-top: 30px;" adds margin on top.</li>
+                <h4>Inline and Block Elements</h4>
+                <li>Display inline stacks side to side.</li>
+                <li>Display block stacks on top (adds a block on the side of each element.</li>
+                <li>< div > & < /div > in HTML are more used than "margin-top" in CSS because it is easier to control the distances between elements.</li>
+                <h4>Classes</h4>
+                <li>< div class="class_name" > & < /div > are used to identify different div elements (e.g. class="main").
+                <br>".class_name" is used in CSS to identify the right div (e.g. .main).</li>
+                <h4>Margins</h4>
+                <li>By default, a margin of 8px is always applied:
+                    <br>body {
+                    <br>    margin: 8px;
+                    <br>}</li>
+                <li>Margins do not apply to bottom because the browser can be extended.</li>
+                <li>margin-top and margin-botton will in many cases collapse into each other, and the biggest value will prevail (although there are scenarios that doesn't happen).</li>
+                <ul>There are 3 things that must be in place when centering with margins:
+                    <li>display: block; | adds space next to the element.</li>
+                    <li>width: ?px; | sets the element's size.</li>
+                    <li>margin-left: auto; & margin-right: auto; | makes the element take all available space.</li>
+                <ul>
+                </li>
+            </ul>
+        </p>
+    </body>
+</html>

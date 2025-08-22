@@ -1,0 +1,212 @@
+<!--index_v3.html-->
+
+<!--Legend:
+    1. &emsp; = tab space
+    2. &lt; = <
+    3. &gt; = >
+-->
+
+<!-- The shortkey to comment things in VScode is Shift + Alt + A -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <title>👩‍💻 My Coding Journey</title>
+    </head>
+    <body>
+        <h1>Hi! I'm V and this is: 👩‍💻 My Coding Journey |  <a href="https://x.com/enchantedcode?t=Cp0MStUanBraESI98aKt2w&s=08" target="_blank">Twitter</a></h1>
+        <h2>This website was built to structure my notes while I'm learning to code.</h2>
+        <h3><a href="index.html">Current Version</a> | See my journey here: <a href="archive/v1/index_v1.html">v1</a> |  <a href="archive/v2/index_v2.html">v2</a></h3>
+        <p>
+            <ul>
+                <h3><dt>HTML (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank">documentation</a>)</dt></h3>
+                <h4>Doctype</h4>
+                <li>Use &lt;!DOCTYPE html&gt; at the top of the page to indicate to the browser that this is HTML5. If not used, will most likely not change anything, but might cause issues sometimes.</li>
+                <ul>
+                    <h4>HTML</h4>
+                    <li>Use &lt;html&gt; & &lt;/html&gt; to indicate the following code is HTML.</li>
+                    <ul>
+                        <h4>Head</h4>
+                        <li>Use &lt;head&gt; & &lt;/head&gt; to include: 
+                        <ul>
+                            <li>&lt;title&gt; Title placeholder &lt;/title&gt; | add page name on the tab.</li>
+                            <li>&lt;link rel="stylesheet" href="styles.css"/&gt; & &lt;link href="https://fonts.googleapis.com/..." rel="stylesheet"&gt; | add css links.</li>
+                            <li>&lt;script src="index.js"&gt; & &lt;/script&gt; | add js links.</li>
+                            <li>[tbd] Metadata for sharing in other websites (e.g. Twitter).</li>
+                        </ul>
+                        <h4>Body</h4>
+                        <li>Use &lt;body&gt; & &lt;/body&gt; to include page elements:</li>
+                        <ul>
+                            <dt><h4>Text elements (Core HTML tags)</h4></dt>
+                            <li>&lt;h1&gt; & &lt;/h1&gt; | add title type 1.</li>
+                            <li>&lt;h2&gt; & &lt;/h2&gt; | add title type 2.</li>
+                            <li>&lt;h3&gt; & &lt;/h3&gt; | add title type 3.</li>
+                            <li>&lt;p&gt; & &lt;/p&gt; | add paragraph.</li>
+
+                            <dt><h4>Anchor Tags</h4></dt>
+                            <li>&lt;a href="file.html"&gt; Visible Text &lt;/a&gt; | add a link to another html file.</li>
+                            <li>&lt;a href="website.com" target="_blank"&gt; Visible Text &lt;/a&gt; | add a link for an external website to open on a new tab.</li>
+
+                            <dt><h4>Images</h4></dt>
+                            <li>&lt;img src=""&gt; | includes image. The image must be placed in the same folder as the coding file.</li> 
+                            <li>&lt;img src="" width="100%&gt; | includes image and width. Adding width="100%" resizes the image according to page size.</li>
+                            <li>&lt;img src="" alt="image description"&gt; | includes image and alt text for image description. The alt text does not show in the rendered file, but is used for accessibility purposes when users use screen readers to access the file. The alt text also works as a fallback if the image doesn't render properly, and it helps your file to get more search traffic (e.g. on Google) since it provides metadata which can be used by other tools. Best practices for writing alt text include:</li>
+                            <ul>
+                                <li>Descriptions should remain under 125 characters: many screen readers will cut off after this limit has been reached.</li>
+                                <li>Do not include "image of": alt text is within the image tag already.</li>
+                            </ul>
+                            <dt><h4>Interactive Elements & Buttons</h4></dt>
+                            <li>&lt;button&gt; & &lt;/button&gt; | add pre-formated buttons.</li>
+                            <li>&lt;input type="text"&gt; | add input box. Add placeholder="" inside <> to include placeholder text.</li>
+                            <li>&lt;input type="password"&gt; add input password box.</li>
+                            <li>&lt;input type="checkbox"&gt; add input checkbox.</li>
+                            <li>&lt;label for="name"&gt;Title outside of button: &lt;/label&gt;<br>
+                                &lt;input placeholder="placeholder inside of button" id="name"&gt; | add labels. Labels ensure that screenreaders can convey the purpose of the input field for accessibility and allows users to click on the label to focus or activate the associated input. Use for and id where the value is the same for both.</li>
+                            <li>&lt;time datetime="2025-05-13"&gt;May 13, 2025&lt;/time&gt; | add time. It includes a datetime attribute for machine readable format, allowing for better search engine results.</li>
+                            <li>&lt;address&gt; & &lt;/address&gt; | add address.</li>
+                            <li>&lt;audio controls&gt;&lt;source src="file.wav" type="audio/mpeg"&gt;&lt;/audio&gt; | add audio.</li>
+
+                            <dt><h4>Section Elements</h4></dt>
+                            <li>&lt;div&gt; & &lt;/div&gt; | add section.</li>
+                            <li>&lt;br&gt; & &lt;/br&gt; | add break.</li>
+
+                            <dt><h4>List Elements</h4></dt>
+                            <li>Use &lt;ol&gt; & &lt;/ol&gt; and &lt;ul&gt; & &lt;/ul&gt; to start ordered and unordered lists.</li>
+                            <ul>
+                                <li>&lt;dl&gt; & &lt;/dl&gt; | add description list.</li>
+                                <ul>
+                                    <li>&lt;dt&gt; & &lt;/dt&gt; | add description title.</li>
+                                    <li>&lt;dd&gt; & &lt;/dd&gt; | add description detail.</li>
+                                    <li>&lt;li&gt; & &lt;/li&gt; | add list item.</li>
+                                </ul>
+                            </ul>
+
+                            <dt><h4>HTML File Paths</h4></dt>
+                            <p>Adding "./file" means that file is in the same folder as the html file where it's referenced; adding "/file" means that file is at the root of the project; Adding "../file" means that file is in a folder up in relation to the html file where it's referenced.</p>
+                            <ul>
+                                <li>&lt;img src="picture.jpg"&gt; | The "picture.jpg" file is located in the same folder as the current page.</li>
+                                <li>&lt;img src="images/picture.jpg"&gt; | The "picture.jpg" file is located in the images folder in the current folder.</li>
+                                <li>&lt;img src="/images/picture.jpg"&gt; | The "picture.jpg" file is located in the images folder at the root of the project. Having a slash is a way to start directly from the root directory.</li>
+                                <li>&lt;img src="./picture.jpg"&gt; | The "picture.jpg" file is located in the current folder. Adding "./" does not change anything, it's just a visual reminder.</li>
+                                <li>&lt;img src="../picture.jpg"&gt; | The "picture.jpg" file is located in the folder one level up from the current folder.</li>
+                                <li>&lt;img src="../../picture.jpg"&gt; | The "picture.jpg" file is located in the folder two levels up from the current folder.</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </ul>
+                <h3><dt>CSS</dt></h3>
+                <p>CSS selects certain HTML elements and styles them (e.g. body, button, img). Within brackets, a property and a value are required as in the example below:
+                <br>body {
+                    <br>&emsp;color: red;
+                <br>}</p>
+
+                <h4>CSS Syntax</h4>              
+                <li>background: red (or #8B4513); | adds background colour.</li>
+                <li>color: white (or #8B4513); | adds letter colour.</li>
+                <li>text-align: center; | aligns text.</li>
+                <li>width: 50px; | adds width and is not needed for buttons, because the element already has built-in width.</li>
+                <li>height: 36px; | adds height.</li>
+                <li>font-size: 25px; | adds font size.</li>
+                <li>font-weight: bold; | adds font formatting.</li>
+                <li>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; | adds font type by targetting a font stack: in the example, if the browser finds the Verdana font installed, it will use; else it will successfully try the next ones in the family. and are generally placed directly in the body instead of individual elements. Web safe fonts are fonts that are available in most clients (e.g. laptops, smartphones, tablets, smartwatches, etc.). See <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php" target="_blank">CSS Web Safe Fonts</a> for a list of the best web safe fonts.</li>
+                <li>text-align: center; | adds text alignment.</li>
+                <li>border: 1px solid #dfe1e5; | adds border and requires 3 values: size, type and color.</li>
+                <li>border-radius: 4px; | rounds border corners.</li>
+                <li>margin-top: 30px; | adds margin on top.</li>
+                <li>margin: 10px; | adds margin to all sides.</li>
+                <li>padding-left: 3px; | adds padding on the left.</li>
+                <li>padding: 5px; | adds padding to all sides.</li>
+                <li>line-height: 24px; | adds margin: it refers to the height of one line of text and is better to use with input fields as more browsers display it correctly. It does not take into account padding and border values.</li>
+                <li>box-shadow: 10px 10px 5px lightblue; | adds shadow by specifying horizontal shadow size, vertical shadow size, blur effect and shadow color. For additional elements, see <a href="https://www.w3schools.com/css/css3_shadows_box.asp" target="_blank">Box Shadow</a>.</li>
+
+                <h4>Inline & Block Elements</h4>
+                <p>Display inline stacks elements side to side, meanwhile display block adds a block on the side of each element to ocupy the empty space, resulting in vertical stacking of elements.</p>
+
+                <h4>Classes</h4>
+                <p>Classes are used to identify elements in html, which will be referred to in css.</p>
+                <li>&lt;div class="class_name"&gt; & &lt;/div&gt; are used to identify different div elements (e.g. class="main").
+                <br>".class_name" is used in CSS to identify the right div (e.g. .main).</li>
+                <li>Margin-top in html is commonly replaced by &lt;div&gt; & &lt;/div&gt; in CSS because it is easier to control the distances between elements.</li><br>
+                <h4>Utility Classes</h4>
+                <p>Utility classes are classes set for a single CSS property, and can be used for multiple elements by renaming individual elements and adding the class name after a single space:<br>
+                In HTML: &lt;h3 class="italic"&gt;Heading&lt;/h3&gt; or &lt;h3 class="card italic"&gt;Heading&lt;/h3&gt;<br>
+                In CSS: .italic {<br>
+                    &emsp;font-style: italic;<br>
+                }</p>
+
+                <h4>Margins</h4>
+                <p>Margins add space on the outside of a div. By default, a margin of 8px is always applied:
+                <br>body {
+                    <br>&emsp;margin: 8px;
+                <br>}</p>
+                <li>The DRY approach to adding margins with different values is by using "margin: top right bottom left":
+                <br>.body {
+                    <br>&emsp;margin: 10px 20px 30px 40px;
+                <br>}</li>
+                <li>In case there are repeated values for top-bottom (e.g. 10px) and/or for left-right (e.g. auto), they can be combined:
+                <br>.body {
+                    <br>&emsp;margin: 10px auto;
+                <br>}</li>
+                <li>Margins do not apply to bottom because the browser can be extended.</li>
+                <li>Margin-top and margin-botton will in many cases collapse into each other, and the biggest value will prevail (although there are scenarios that this doesn't happen).</li>
+
+                <h4>Centering</h4>
+                <p>There are 3 things that must be in place when centering with margins:</p>
+                <li>display: block; | adds space next to the element.</li>
+                <li>width: ?px; | sets the element's size.</li>
+                <li>margin-left: auto; & margin-right: auto; | makes the element take all available space.</li>
+                <p>Alternatively, centering can also be done by removing display and margin configurations, and adding "text-align: center;" to .main in css.</p>
+                
+                <h4>Padding</h4>
+                <li>Refers to the distance between the background of an element and the inner elements, or between the edge and the div container (e.g. background and text). In PowerPoint would be the text distance configuration in Format Shape.</li>
+                <li>By default the padding of a div is 0.</li>
+                
+                <h4>The Box Model</h4>
+                <li>Refers to creating boxes by adding margin, border, padding and content to an element.</li>
+                <li>Context colors are free online websites to check the contrasting ration of colors for accessibility (e.g. userway.org/contrast).</li>
+                
+                <h4>Flexbox</h4>
+                <li>Flexbox (short for Flexible Box Layout) is a CSS layout model that provides a more efficient way to lay out, align, and distribute space among items in a container, whether they are arranged in rows or columns. It's particularly useful for responsive design, allowing elements to dynamically adjust their size to fill available space or shrink to fit, eliminating the need for complex positioning and floats. Flexboxes consist of:</li>
+                <ul>
+                    <li>A container: div</li>
+                    <li>Its direct children: button, input, etc.</li>
+                </ul>
+                <br>
+                <li>To display items horizontally (in a row), create a flexbox by adding a div and a class in html, and add "display: flex;" inside the related class in the css file.<br>
+                &lt;div class="btn-wrapper"&gt;<br>
+                    &emsp;&lt;button class="btn"&gt;Google Search&lt;/button&gt;<br>
+                    &emsp;&lt;button class="btn"&gt;I'm Feeling Lucky&lt;/button&gt;<br>
+                &lt;/div&gt;<br><br>
+                .btn-wrapper {<br>
+                    &emsp;display: flex;<br>
+                }</li><br>
+                <li>When centralizing more than one element in the same row, use margin-left and margin-right inside the div class to add spacing between the elements inside div.<br>
+                .btn {<br>
+                    &emsp;margin-left: 4px;<br>
+                    &emsp;margin-right: 4px;<br>
+                }</li><br>
+
+                <li>To centralize the items using flexbox, use "justify-content: center" or "justify-content: space-around" or "justify-content: space-between" inside the related class in the css file.</li>
+                <p>Example 1:</p>
+                <p>.btn-wrapper {<br>
+                    &emsp;display: flex;<br>
+                    &emsp;justify-content: center;<br>
+                }</p>
+                <p>Example 2:</p>
+                <p>.card {<br>
+                    &emsp;display: flex; | creates flexbox.<br>
+                    &emsp;justify-content: space-around; | centralizes elements inside the card, which can also be accomplised by adding "width: fit-content;" or adding "margin-right: ?px;" inside the element {} on the left of the div.<br>
+                    &emsp;width: 400px; | centralizes the card on the page.<br>
+                    &emsp;margin-left: auto; | centralizes the card on the page.<br>
+                    &emsp;margin-right: auto; | centralizes the card on the page.<br>
+                }</p>
+                <h4>CSS Inheritance</h4>
+                <p>Referes to adding a parameter to the parent which will be inherited by all of the children of the element. Inheritance doesn't just work with the direct children of the element selected in CSS, but will also work any number of layers down the descendant tree of the selected element. However, not all CSS properties get inherited; see <a href="https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited" target="_blank">Inherited CSS Properties</a> for a list of inherited css properties. It helps you write DRY (Don't Repeat Yourself) code, and allows you to avoid bugs and be more efficient.<br>
+                .article {<br>
+                    &emsp;text-align: center;<br>
+                }</p>
+            </ul>
+        </p>
+    </body>
+</html>

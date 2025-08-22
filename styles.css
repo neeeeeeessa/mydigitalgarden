@@ -1,0 +1,15 @@
+/*styles_v3.css*/
+
+head {
+    margin-top: 100px;
+}
+
+body {
+    background: #F1E9D2; /* red, blue, yellow, or hex numbers (e.g. #8B4513), etc */
+    color: #222222;  /* red, blue, yellow, etc */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; /* 0px - 100px and beyond */
+    font-weight: normal; /* ligther, normal, bold */
+    text-align: left; /* left, center or right */
+    margin: 40px;
+}
